@@ -1,0 +1,26 @@
+.topbar {
+  width: 100%;
+  background-color: #614b4c;
+}
+
+.content {
+  display: flex;
+  padding: 1.2rem 0;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  text-transform: uppercase;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  display: inline-block;
+  margin-right: 1rem;
+  background: url('/sprite-wc.png') no-repeat scroll 0px 4px;
+}
