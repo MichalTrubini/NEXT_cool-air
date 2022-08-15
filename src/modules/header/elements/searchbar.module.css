@@ -1,0 +1,34 @@
+.searchbar {
+    border: none;
+    background-color: #f5f5f5;
+    color: #515151;
+    padding: 0.5rem 1rem;
+    outline: none;
+    height: 4rem;
+    width: 100%;
+}
+
+.form {
+    position: relative;
+    width: 40%;
+}
+
+.searchbar::placeholder {
+    text-transform: uppercase;
+}
+
+.button {
+    border: none;
+    background: url('/sprite-wc.png') no-repeat scroll 7px -224px;
+    background-color: inherit;
+    width: 4rem;
+    height: 4rem;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.button:hover {
+    cursor: pointer;
+}

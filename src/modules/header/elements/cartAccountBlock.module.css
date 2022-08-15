@@ -1,0 +1,36 @@
+.flex {
+    display: flex;
+    align-items: center
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cart {
+    background: url('/sprite-wc.png') no-repeat scroll -70px -101px;
+}
+
+.account {
+    background: url('/sprite-wc.png') no-repeat scroll 3px -102px;
+}
+
+.icon {
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    margin-right: 0.5rem;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.name {
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 0.3rem;
+}
