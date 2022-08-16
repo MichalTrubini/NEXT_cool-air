@@ -1,0 +1,63 @@
+.footermain {
+    background-color: #2C2C2C;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+.block {
+    padding: 5rem 2rem;
+    width: 25%;
+    border-right: 1px solid #464646;
+    min-height: 36rem;
+}
+
+.block:first-child {
+    width: 30%;
+}
+
+.block:last-child {
+    border: none;
+}
+
+.header {
+    margin-bottom: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.logocontainer {
+    margin-bottom: 1.8rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.arrow::before {
+    content: '\25ba';
+    padding-right: 0.5rem;
+}
+
+.location::before {
+    content: '\f041';
+    padding-right: 0.5rem;
+}
+
+.phone::before {
+    content: '\f095';
+    padding-right: 0.5rem;
+}
+
+.email::before {
+    content: '\f0e0';
+    padding-right: 0.5rem;
+}

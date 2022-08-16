@@ -1,0 +1,19 @@
+.catlist {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+}
+
+.listitem {
+    color: #010101;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    line-height: 2.6rem;
+    font-size: 1.2rem;
+}
+
+.listitem:hover {
+    cursor: pointer;
+}

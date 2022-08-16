@@ -1,0 +1,14 @@
+.categories {
+    background-color: #2c2c2c;
+    color: white;
+    width: 20rem;
+    padding: 1.3rem 1.8rem;
+}
+
+.catname {
+    text-transform: uppercase;
+}
+
+.catlist {
+    display: none;
+}
