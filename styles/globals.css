@@ -4,6 +4,7 @@ html,
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #fff;
+  color: black;
   font-size: 62.5%;
   line-height: 2.4rem;
 }

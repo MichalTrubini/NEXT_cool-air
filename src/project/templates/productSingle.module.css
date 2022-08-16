@@ -1,0 +1,13 @@
+.content {
+    padding: 4rem 0;
+    display: flex;
+    gap: 4rem;
+}
+
+.content_left {
+    width: 40%;
+}
+
+.content_right {
+    width: 60%;
+}

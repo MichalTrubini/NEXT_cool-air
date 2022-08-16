@@ -1,11 +1,12 @@
 import { NextPage } from "next";
 import Layout from "../src/project/layout/layout";
+import ProductSingle from "../src/project/templates/productSingle";
 
 const Product: NextPage = () => {
     return (
         <>
         <Layout>
-            <h2 style={{textAlign: 'center', fontSize: 50, marginTop: 100}}>Here is something</h2>
+            <ProductSingle />
         </Layout>
         </>
     )
