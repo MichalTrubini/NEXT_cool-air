@@ -1,0 +1,12 @@
+.price {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.vat {
+    font-weight: 700;
+}
+
+.wrapper {
+    margin-bottom: 2rem;
+}
