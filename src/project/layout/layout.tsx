@@ -7,7 +7,6 @@ const Layout = (props: any) => {
     <>
       <Header />
         <main>
-            <PageTitleBar />
             {props.children}
         </main>
       <Footer />

@@ -7,21 +7,11 @@
 .wrapper {
     display: flex;
     align-items: flex-start;
+    flex-direction: column;
 }
 
 .block {
     padding: 5rem 2rem;
-    width: 25%;
-    border-right: 1px solid #464646;
-    min-height: 36rem;
-}
-
-.block:first-child {
-    width: 30%;
-}
-
-.block:last-child {
-    border: none;
 }
 
 .header {
@@ -60,4 +50,21 @@
 .email::before {
     content: '\f0e0';
     padding-right: 0.5rem;
+}
+
+@media screen and (min-width:768px) {
+    .block {
+        padding: 5rem 2rem;
+        width: 25%;
+        border-right: 1px solid #464646;
+        min-height: 36rem;
+    }
+    
+    .block:first-child {
+        width: 30%;
+    }
+    
+    .block:last-child {
+        border: none;
+    }
 }

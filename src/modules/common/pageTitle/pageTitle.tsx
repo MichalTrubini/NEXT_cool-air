@@ -1,11 +1,7 @@
-import styles from './pageTitle.module.css';
+import styles from "./pageTitle.module.css";
 
-const PageTitle = () => {
-    return (
-        <h2 className={styles.title}>
-            Tu bude názov stránky
-        </h2>
-    )
-}
+const PageTitle: React.FC<{ title: string }> = (props) => {
+  return <h2 className={styles.title}>{props.title}</h2>;
+};
 
 export default PageTitle;

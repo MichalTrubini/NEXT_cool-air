@@ -2,10 +2,10 @@ import Breadcrumbs from './breadcrumbs';
 import PageTitle from './pageTitle';
 import styles from './pageTitleBar.module.css';
 
-const PageTitleBar = () => {
+const PageTitleBar:React.FC<{title:string}> = (props) => {
     return (
         <div className={styles.row}>
-            <PageTitle />
+            <PageTitle title={props.title}/>
             <Breadcrumbs />
         </div>
     )

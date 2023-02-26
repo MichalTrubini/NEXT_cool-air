@@ -35,6 +35,6 @@ h1, h2, h3 {
 }
 
 .container {
-  width: 91.25%;
-  margin-inline: auto;
+  padding-left: 1.5rem;
+  padding-right:1.5rem
 }
