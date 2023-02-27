@@ -3,7 +3,7 @@ import { GetServerSideProps, InferGetServerSidePropsType, NextPage } from "next"
 import Layout from "../../src/project/layout/layout";
 import ProductTemplate from "../../src/project/templates/productTemplate";
 
-const ProductSingle: NextPage = ({ product, page }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
+const ProductSingle: NextPage = ({ product }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   return (
     <Layout>
       <ProductTemplate {...product} />
@@ -27,7 +27,6 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   return {
     props: {
       product: JSON.parse(JSON.stringify(documents)),
-      page: page,
     },
   };
 };
