@@ -1,11 +1,13 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 export interface CartState {
-    qty: number
+    qty: number;
+    cart: {}
 }
 
 const initialState: CartState = {
-    qty: 0
+    qty: 0,
+    cart: {}
 }
 
 export const cartSlice = createSlice({

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
+:root {
+  --mainAccent: #614B4C;
+}
+
 html,
 body {
   font-family: 'Montserrat', sans-serif;
@@ -37,4 +41,8 @@ h1, h2, h3 {
 .container {
   padding-left: 1.5rem;
   padding-right:1.5rem
+}
+
+.imageObjectFitCover {
+  object-fit: cover;
 }

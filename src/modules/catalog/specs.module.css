@@ -1,0 +1,9 @@
+.accent {
+    background-color: var(--mainAccent);
+    color: white;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 1rem 2.4rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+}

@@ -7,7 +7,7 @@ import React, {useRef} from 'react';
 const CartForm = () => {
 
     const dispatch = useDispatch();
-    const enteredNumber = useSelector((state: CartState) => state.cart.qty);
+    const enteredNumber = useSelector((state: CartState) => state.qty);
     const inputRef = useRef<HTMLInputElement>(null);
 
     const cartSubmitHandler = (e:any) => {
