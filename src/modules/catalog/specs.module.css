@@ -7,3 +7,31 @@
     font-weight: 600;
     font-size: 1.4rem;
 }
+.tabsContainer {
+    margin-bottom: 2rem;
+}
+
+.tableContainer {
+    padding: 2rem;
+    border: 1px solid #ededed;
+}
+
+.table {
+    border: 1px solid #ededed;
+}
+
+.tableRow {
+    display: flex;
+}
+
+.tableHeader, .tableValue {
+    width: 50%;
+    padding: 0.8rem;
+    border-bottom: 1px solid #ededed;
+}
+
+.tableHeader {
+    color: black;
+    font-weight: 600;
+    border-right: 1px solid #ededed;
+}

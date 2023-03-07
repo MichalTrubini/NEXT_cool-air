@@ -1,6 +1,5 @@
 import DescriptionShort from "../../modules/catalog/descriptionShort";
 import styles from "./productTemplate.module.css";
-import calypso from "/public/assets/products/213017_1.png";
 import Image from "next/image";
 import PriceProduct from "../../modules/catalog/priceProduct";
 import CartForm from "../../modules/catalog/cartForm";
@@ -9,7 +8,7 @@ import PageTitleBar from "../../modules/common/pageTitle/pageTitleBar";
 import Specs from "../../modules/catalog/specs";
 
 const ProductSingle = ({ ...product }) => {
-console.log(product)
+  console.log('product', product)
   return (
     <>
       <PageTitleBar title={product[0].title} />
@@ -26,7 +25,7 @@ console.log(product)
           <Identifiers ean={product[0].ean} sku={product[0].sku} brand={product[0].brand} />
         </div>
       </div>
-      <Specs />
+      <Specs productSpecsData={product[0].specs}/>
     </>
   );
 };
