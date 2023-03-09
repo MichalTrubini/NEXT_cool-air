@@ -3,9 +3,12 @@ import styles from "./shopTemplate.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "../../modules/common/button";
+import FilterBlock from "../../modules/catalog/filterBlock";
+import gridView from '../../../public/grid-view.svg'
+import listView from '../../../public/view-list.svg'
 
 const ShopTemplate: React.FC<{
-  products: { title: string; description: string; price: number; id: string; imageUrl: string }[];
+  products: { title: string; description: string; price: number; id: string; imageUrl: string }[]; productsCount: number
 }> = (props) => {
   const cartSubmitHandler = () => {};
 
@@ -13,9 +16,19 @@ const ShopTemplate: React.FC<{
     <>
       <PageTitleBar title="obchod" />
       <div className={`${styles.container} container`}>
-        <div className={styles.containerLeft}></div>
+        <div className={styles.containerLeft}>
+          <FilterBlock />
+        </div>
         <div className={styles.containerRight}>
-          <div className={styles.controller}></div>
+          <div className={styles.controller}>
+            <div className={styles.controllerWrapper}>
+              <div className={styles.iconsContainer}>
+                <Image src={gridView} alt='grid view' width='22px' height='22px'/>
+                <Image src={listView} alt='grid view' width='22px' height='22px'/>
+              </div>
+              <p>{`Zobrazených 1-12 z ${props.productsCount} výsledkov`}</p>
+            </div>
+          </div>
           <div className={styles.shopContent}>
             {props.products.map((item) => (
               <div className={styles.item} key={item.id}>

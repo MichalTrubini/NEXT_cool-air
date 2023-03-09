@@ -1,12 +1,13 @@
 import { MongoClient } from "mongodb";
-import { GetServerSideProps, InferGetServerSidePropsType, NextPage } from "next";
+import { GetServerSideProps, NextPage } from "next";
 import Head from "next/head";
 import Layout from "../src/project/layout/layout";
 import ShopTemplate from "../src/project/templates/shopTemplate";
 
 const Shop: NextPage = (props: any) => {
 
-  const productsData = props.products
+  const productsData = props.products;
+  const productsCount = props.countDocs
 
   return (
     <div>
@@ -16,7 +17,7 @@ const Shop: NextPage = (props: any) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <ShopTemplate products={productsData}/>
+        <ShopTemplate products={productsData} productsCount={productsCount}/>
       </Layout>
     </div>
   );
@@ -34,6 +35,8 @@ export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
 
   const collection = db.collection("products");
   const documents = await collection.find().limit(12).toArray();
+  const value = await collection.countDocuments()
+
   return {
     props: {
       products: documents.map((item) => ({
@@ -43,6 +46,7 @@ export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
         id: item._id.toString(),
         imageUrl: item.imageUrl
       })),
+      countDocs: value
     },
   };
 };
